@@ -4,6 +4,8 @@ Source base: upstream ThunderKittens commit `67845f5fa48d05343dbbc1ba1403f11061f
 Date: 2026-11-11.
 
 ## Passed
+- Eight CPU-only wrapper/analytic-gradient contract tests passed in 0.190 s
+  using PyTorch 2.6.0+cpu. These do not execute or validate the GPU kernels.
 - Standalone CUDA build: explicit `compute_75/sm_75`, CUDA 12.8, G++11.4.
 - Fork-integrated `make -C kernels/sm75/rmsnorm`: exit 0.
 - PTX assembler reports SM75 code generation. Sample fused forward: 29 registers,

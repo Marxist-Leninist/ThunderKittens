@@ -16,3 +16,7 @@ check: $(OUT)
 	python3 tests/check_correctness.py
 benchmark: $(OUT)
 	python3 tests/benchmark.py
+
+.PHONY: cpu-check
+cpu-check:
+	python3 tests/check_cpu.py

@@ -24,6 +24,7 @@ From this directory in the fork:
 
 ```sh
 make
+python3 tests/check_cpu.py              # CPU contract checks, no GPU validation
 python3 tests/check_correctness.py --output correctness.json
 python3 tests/benchmark.py --output benchmark.json --rows 8 --repeats 10
 ```
