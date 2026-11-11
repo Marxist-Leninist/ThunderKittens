@@ -1,5 +1,7 @@
 # ThunderKittens
 
+> **This fork: experimental SM75 support.** Turing GPUs have a scoped FP32 kernel lane under [kernels/sm75/rmsnorm](kernels/sm75/rmsnorm), with forward/backward RMSNorm and fused ReLU-squared/RMSNorm. This does not make the general Hopper/Blackwell tile API SM75-compatible. See the lane documentation and validation limits.
+
 <div align="center" >
     <img src="assets/thunderkittens.png" height=350 alt="ThunderKittens logo" style="margin-bottom:px"/><br/>
     <em>ThunderKittens: Tile primitives for speedy kernels</em><br/><br/>

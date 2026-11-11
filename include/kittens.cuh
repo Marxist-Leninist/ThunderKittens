@@ -5,6 +5,10 @@
 
 #pragma once
 
+#ifdef KITTENS_SM75
+#error "SM75 is a scoped portable backend: include sm75.cuh and use kernels/sm75; the general tile API is not ported."
+#endif
+
 // Translate old macro names to the KITTENS_SMxx form
 #if defined(KITTENS_AMPERE)
 #define KITTENS_SM80
